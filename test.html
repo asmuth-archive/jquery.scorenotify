@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>23up</title>
+    <meta content='text/html; charset=utf-8' http-equiv='Content-type'>
+    <meta content='width=device-width, initial-scale=1, maximum-scale=1' name='viewport'>
+  </head>
+  <body>
+
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.min.js' type='text/javascript'></script>
+    <script src='jquery.scorenotify.js' type='text/javascript'></script>
+
+    <div class="druecker_1" style="width:200px; height:200px; background:#ccc; float:left; margin:300px 100px; margin-left:500px;"></div>
+    <div class="druecker_2" style="width:200px; height:200px; background:#ccc; float:left; margin:300px 100px;"></div>
+
+    <style type="text/css">
+      
+      .notify_positive{ color:#4f4; }
+      .notify_negative{ color:#f44; }
+
+      .notify_negative, .notify_positive{ 
+        font-family:Arial, sans-serif;
+        font-weight:bold; 
+        font-size:24px; 
+      }
+      
+    </style>
+
+    <script type="text/javascript">
+
+      $(document).ready(function(){
+        $('.druecker_1').click(function(){
+          $(this).scoreNotify({ value: 500, offset_y: -10, add_class: 'notify_positive' });
+        });
+        $('.druecker_2').click(function(){
+          $(this).scoreNotify({ value: -200, offset_y: -10, add_class: 'notify_negative' });
+        });
+      });
+
+    </script>
+  </body>
+</html>
