@@ -1,0 +1,13 @@
+= jquery.scorenotify.js
+
+fancy super-mario-style 'score-up' animations with jquery/css
+
+{<img src="https://raw.github.com/paulasmuth/jquery.scorenotify/master/preview.gif" />}[https://github.com/paulasmuth/jquery.scorenotify]
+
+== Usage
+  
+  // 200 points up!
+  $('.target').scoreNotify({ value: 200 });
+
+  // 500 points up, with css-class!
+  $('.target').scoreNotify({ value: 500, add_class: 'notify_positive' });
